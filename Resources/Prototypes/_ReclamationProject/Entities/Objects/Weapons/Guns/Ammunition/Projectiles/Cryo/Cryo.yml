@@ -1,6 +1,6 @@
 - type: entity
-  name: plasma
-  id: BulletCryo
+  name: cryo flame
+  id: BulletCryolator
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
