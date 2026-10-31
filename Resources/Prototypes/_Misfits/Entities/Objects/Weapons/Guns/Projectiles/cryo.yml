@@ -2,7 +2,7 @@
 # Deals Cold damage and applies stamina drain on impact, simulating a cryogenic freeze effect.
 - type: entity
   name: cryo bolt
-  id: BulletCryo
+  id: BulletCryolator
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
