@@ -2,8 +2,8 @@
 
 - type: entity
   name: Flamer
-  parent: R14Flamebase
-  id: R14Flamer
+  parent: N14Flamebase
+  id: N14Flamer
   description: A weapon that shoots a mixture of fuel.
   components:
   - type: MultiHandedItem
@@ -65,8 +65,8 @@
 
 - type: entity
   name: Incinerator
-  parent: R14Flamebase
-  id: R14Incinerator
+  parent: N14Flamebase
+  id: N14Incinerator
   description: A weapon that shoots a more explosive version of fuel
   components:
   - type: MultiHandedItem
@@ -127,7 +127,7 @@
     price: 500
 
 - type: entity
-  id: R14Flamebase
+  id: N14Flamebase
   parent: BaseItem
   abstract: true
   components:

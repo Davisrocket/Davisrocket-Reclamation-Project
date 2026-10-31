@@ -37,7 +37,7 @@
 - type: entity
   name: flamer fuel cannister
   description: A cannister of fuel used in weapons
-  id: N14FlamerFuelCannister
+  id: N14FlamerFuel
   suffix: Full
   parent: N14BaseFlamerFuel
   components:
@@ -60,7 +60,7 @@
 - type: entity
   name: enriched flamer fuel cannister
   description: A specialized cannister of fuel used in weapons
-  id: N14EnrichedFlamerFuelCannister
+  id: N14EnrichedFlamerFuel
   suffix: Full
   parent: N14BaseFlamerFuel
   components:
