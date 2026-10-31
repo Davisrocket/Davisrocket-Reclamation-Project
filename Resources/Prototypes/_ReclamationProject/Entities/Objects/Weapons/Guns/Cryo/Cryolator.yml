@@ -59,7 +59,7 @@
     bonusDamage:
       types:
         Cold: 10
-    fireCostMultiplier: 2.0
+    fireCostMultiplier: 2
   - type: StaticPrice
     price: 300
 
@@ -122,7 +122,7 @@
     bonusDamage:
       types:
         Pierce: 10
-    fireCostMultiplier: 5.0
+    fireCostMultiplier: 5
   - type: StaticPrice
     price: 300
 
