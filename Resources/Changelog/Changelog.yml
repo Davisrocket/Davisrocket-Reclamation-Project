@@ -13017,3 +13017,245 @@ Entries:
   id: 6563
   time: '2026-10-28T11:23:14.0000000+00:00'
   url: https://github.com/BluCottonCandy/Reclamation-Project/pull/90
+- author: aftermath434
+  changes:
+    - type: Add
+      message: forged unbranded Fix
+  id: 6564
+  time: '2026-10-29T00:01:39.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/94
+- author: BluCottonCandy
+  changes:
+    - type: Add
+      message: >-
+        Added permanent organ and limb health capacity loss after complete
+        failure, preserved through saving and transplantation.
+    - type: Tweak
+      message: >-
+        Fully disabled limbs are capped at 15 health. Bone-setting surgery can
+        salvage attached arms, hands, legs, and feet from 0/0 to 15/15, but
+        other healing and repeated bone setting cannot raise that cap.
+    - type: Tweak
+      message: >-
+        Organ surgery repairs only to remaining capacity; fresh replacements
+        restore full capacity while used replacements retain wear.
+    - type: Add
+      message: >-
+        Failed or missing liver and kidneys cause 1 poison damage per second
+        each and stop chemical metabolism until repaired or replaced.
+    - type: Fix
+      message: >-
+        Permanently worn hearts retain their reduced critical threshold after
+        repair.
+    - type: Tweak
+      message: >-
+        The health indicator includes heart-related capacity loss relative to
+        the normal critical threshold.
+    - type: Tweak
+      message: >-
+        Medical scans hide healthy parts, retain small text, and show compact
+        health/status readings with at most one decimal place instead of long
+        decimals, HP explanations, or redundant max-loss labels.
+    - type: Add
+      message: >-
+        Back Alley Doctor and Wasteland Doc kits now include an N14 health
+        scanner.
+    - type: Add
+      message: >-
+        Med-X gives temporary limb health and keeps attached limbs usable
+        despite disabling injuries while active, without restoring failed
+        organs.
+    - type: Tweak
+      message: >-
+        Every Med-X dose permanently removes 15 health capacity from both the
+        liver and kidneys; overlapping doses extend use without stacking the
+        temporary boost.
+    - type: Fix
+      message: >-
+        Enraged restores use of attached disabled limbs and prevents limb
+        disabling until the effect ends, without healing the underlying
+        injuries.
+    - type: Add
+      message: >-
+        Added a complete Organ and Limb Health guide covering the medical
+        system, scanner, treatment, bone-setting salvage, replacements, Med-X,
+        and Enraged limb protection.
+    - type: Fix
+      message: >-
+        Made the medical overview and surgery guides accessible from the main
+        guidebook menu.
+    - type: Fix
+      message: >-
+        Fixed medical integration-test compilation so automated build and
+        validation checks can run.
+  id: 6565
+  time: '2026-10-29T02:14:22.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/93
+- author: BluCottonCandy
+  changes:
+    - type: Add
+      message: >-
+        Added four authored expeditions: Factory One, Factory Two, Factory
+        Three, and Cave One.
+    - type: Tweak
+      message: >-
+        Easy expeditions choose Factory One or Cave One equally; Medium uses
+        Factory Two and Hard uses Factory Three.
+    - type: Tweak
+      message: >-
+        Replaced procedural launching on every original expedition entrance
+        variant with the authored-map difficulty selector, including
+        automatically spawned entrances.
+    - type: Add
+      message: >-
+        Added a 20-minute expedition deadline with return-before-cleanup
+        handling for players, corpses, and ghosts, and retry protection if
+        extraction fails.
+    - type: Add
+      message: >-
+        Added a two-handed rusty gear objective that slows carrying and dragging
+        by 50%, cannot be stored, throws only one tile, and cannot leave the
+        expedition.
+    - type: Add
+      message: >-
+        Installing the gear activates the pre-war generator's animated gears and
+        belt and opens the secured vault.
+    - type: Add
+      message: >-
+        Added generic expedition arrival, return, and escape-ladder markers and
+        visible gun, armor, and enemy placement markers.
+    - type: Tweak
+      message: Expedition gun reward pools contain guns rather than melee weapons.
+    - type: Tweak
+      message: >-
+        Included roofed authored factory and cave layouts, mapped enemies and
+        rewards, and always-powered authored doors while retaining the
+        generator-gated vault objective.
+    - type: Fix
+      message: >-
+        Map validation checks only YAML map files instead of trying to parse
+        copyright and license notices as maps.
+  id: 6566
+  time: '2026-10-29T02:49:43.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/89
+- author: BluCottonCandy
+  changes:
+    - type: Tweak
+      message: >-
+        Restored the original Endurance health scaling, reaching +20 health at
+        Endurance 10, while keeping Enraged.
+    - type: Fix
+      message: >-
+        Updated Endurance character setup information and its guidebook entry to
+        describe the restored health bonus.
+  id: 6567
+  time: '2026-10-31T03:18:18.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/95
+- author: BluCottonCandy
+  changes:
+    - type: Fix
+      message: >-
+        The cane blade loadout now provides its cane sheath with the blade
+        already inside.
+  id: 6568
+  time: '2026-10-31T03:18:28.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/96
+- author: BluCottonCandy
+  changes:
+    - type: Add
+      message: >-
+        At 10 Perception, fire two held one-handed guns together, with each gun
+        retaining its own ammo, fire mode and cooldown.
+    - type: Add
+      message: >-
+        Added a SPECIAL guidebook section with separate stat pages in SPECIAL
+        order, including Perception: Dual Wield and Endurance: Enraged.
+  id: 6569
+  time: '2026-10-31T03:19:23.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/97
+- author: BluCottonCandy
+  changes:
+    - type: Add
+      message: >-
+        Strength 10 grants Juggernaut: 15 seconds of 25% extra melee and
+        structural damage, with melee knockback and knockdown. It has a
+        three-minute cooldown and ends with a four-second stun.
+    - type: Add
+      message: Added the Juggernaut action icon and Strength guidebook entry.
+  id: 6570
+  time: '2026-10-31T03:19:33.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/98
+- author: BluCottonCandy
+  changes:
+    - type: Add
+      message: >-
+        Charisma 10 grants Rally, buffing nearby players for 20 seconds with 20%
+        faster movement, 25% less stamina damage, and no damage slowdown.
+        Three-minute cooldown; the caster and NPCs are excluded.
+    - type: Add
+      message: >-
+        Rally reuses the Legion warcry circle in light blue. Targets are
+        selected at activation and retain their buff outside the circle; later
+        arrivals receive no buff.
+    - type: Add
+      message: Added the Charisma Rally guidebook entry.
+    - type: Add
+      message: >-
+        Rally has a softly shaded light-blue circle and randomly speaks one of
+        four encouragements when activated.
+  id: 6571
+  time: '2026-10-31T03:19:48.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/99
+- author: BluCottonCandy
+  changes:
+    - type: Add
+      message: >-
+        Intelligence 10 grants Override, reusing emag behavior on electronic
+        doors even during outages. Wooden/mechanical doors remain immune.
+        Unlimited uses with a three-minute shared cooldown after success.
+    - type: Add
+      message: >-
+        Override reprograms AI robots to protect players and fight other robots
+        and wasteland enemies, without following the hacker. Player robots and
+        other overridden robots remain friendly.
+    - type: Add
+      message: Added the Intelligence Override guidebook entry.
+    - type: Add
+      message: >-
+        Override uses a Protectron icon and a purely cosmetic green-and-black
+        animated hand aura while targeting, with original artwork attribution.
+    - type: Tweak
+      message: Increased Override’s shared cooldown to three minutes.
+  id: 6572
+  time: '2026-10-31T03:31:28.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/100
+- author: BluCottonCandy
+  changes:
+    - type: Tweak
+      message: >-
+        Reduced Forged Furnace Armor and Forge Keeper Furnace Armor movement
+        slowdown from 35% to 25%.
+  id: 6573
+  time: '2026-10-31T03:31:39.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/101
+- author: BluCottonCandy
+  changes:
+    - type: Add
+      message: >-
+        Agility 10 grants Quickstep, a stamina-free five-tile physical dash with
+        a 30-second cooldown.
+    - type: Tweak
+      message: >-
+        Agility now speeds up do-after progress bars instead of walking and
+        sprinting, preserving the previous per-level speed curve. Chem Agility
+        movement boosts now apply to timed actions too.
+    - type: Add
+      message: Updated the Agility SPECIAL description and guidebook entry.
+    - type: Fix
+      message: >-
+        Quickstep now predicts its movement on the client. Charge movement locks
+        synchronize across client corrections, overlapping charges cannot add
+        duplicate impulses, and interrupted charges release their movement lock.
+  id: 6574
+  time: '2026-10-31T03:55:34.0000000+00:00'
+  url: https://github.com/BluCottonCandy/Reclamation-Project/pull/102
