@@ -1,0 +1,167 @@
+#MARK: New Weapons
+
+- type: entity
+  name: Cyrolator
+  parent: R14Cryobase
+  id: R14Cryolator
+  description: An experimental cryo weapon.
+  components:
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -58
+  - type: Sprite
+    sprite: _ReclamationProject/Objects/Weapons/Guns/Cryo/cryolator.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-1
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: _ReclamationProject/Objects/Weapons/Guns/Cryo/cryolator.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Item
+    size: Large
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: N14CryoCell
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - N14CryoCell
+            - N14SuperCooledCryoCell
+  - type: Gun
+    minAngle: 25
+    maxAngle: 55
+    angleIncrease: 4
+    angleDecay: 12
+    projectileSpeed: 10
+    fireRate: 4
+    soundGunshot:
+      path: /Audio/_Nuclear14/Weapons/Guns/Flames/flamer.ogg
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: FollowDistance
+    backStrength: 4
+  - type: GunDamageBonus
+    bonusDamage:
+      types:
+        Cold: 10
+    fireCostMultiplier: 2.0
+  - type: StaticPrice
+    price: 300
+
+- type: entity
+  name: Crystalizing Cyrolator
+  parent: R14Cryobase
+  id: R14CrystalizingCryolator
+  description: A modified experimental cryo weapon.
+  components:
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -58
+  - type: Sprite
+    sprite: _ReclamationProject/Objects/Weapons/Guns/Cryo/crystalizingcryolator.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-1
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: _ReclamationProject/Objects/Weapons/Guns/Cryo/crystalizingcryolator.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Item
+    size: Large
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: N14CryoCell
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - N14CryoCell
+            - N14SuperCooledCryoCell
+  - type: Gun
+    minAngle: 25
+    maxAngle: 55
+    angleIncrease: 4
+    angleDecay: 12
+    projectileSpeed: 30
+    fireRate: 2
+    soundGunshot:
+      path: /Audio/_Nuclear14/Weapons/Guns/Flames/flamer.ogg
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: FollowDistance
+    backStrength: 4
+  - type: GunDamageBonus
+    bonusDamage:
+      types:
+        Pierce: 10
+    fireCostMultiplier: 5.0
+  - type: StaticPrice
+    price: 300
+
+- type: entity
+  id: R14Cryobase
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+  - type: Item
+    size: Large
+  - type: AmmoCounter
+  - type: Gun
+    minAngle: 25
+    maxAngle: 60
+    angleIncrease: 4
+    angleDecay: 16
+    fireRate: 10
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Nuclear14/Weapons/Guns/Flames/flamer.ogg
+  - type: MagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: N14CryoCell
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - N14CryoCell
+            - N14SuperCooledCryoCell
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+  - type: StaticPrice
+    price: 100
+
